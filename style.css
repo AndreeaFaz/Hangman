@@ -1,0 +1,45 @@
+body {
+  background-color: #83C2BC;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header, .guess-container, .result-container {
+  text-align: center;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.restart-container {
+  text-align: center;
+  height: 100px;
+  margin-top: 200px;
+}
+
+#guessedLetters {
+  font-size: 50px;
+}
+
+#resultMessage {
+  font-size: 50px;
+  color: darkred;
+}
+
+#playerLives {
+  color: #228B22;
+  font-size: 20px;
+}
+
+input {
+  width: 20%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+button, #submit {
+  background-color: #555555;
+  border : none;
+  color: white;
+  width: 10%;
+  font-size: 16px;
+  padding: 8px 10px;
+}

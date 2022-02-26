@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Hangman</title>
+</head>
+<body>
+	<div class="header">
+		<h1>Hangman Game</h1>
+		<p>Try to guess the hidden word by typing one letter at a time.</p>
+	</div>
+	<div class="guess-container">
+		<label for="inputWord">Type a word by choice</label>
+		<input type="text" id="inputWord" placeholder="Type here...">
+		<button id="submit" onclick="generateGuessField()">Submit</button>
+		<br>
+    <br>
+		<label for="guessLetter">Type a letter</label>
+		<input type="text" id="guessLetter" placeholder="Type letter...">
+		<button id="submit" onclick="verifyLetterFromUser()">Guess</button>
+  </div>
+  <div class="result-container">
+    <p id="playerLives">You have 5 lives.</p>
+    <p id="guessedLetters"></p>
+    <p id="resultMessage"></p>
+	</div>
+	<div class="restart-container">
+		<button id="restart" onclick="restartGame()">Play Again</button>
+	</div>
+</body>
+</html>
